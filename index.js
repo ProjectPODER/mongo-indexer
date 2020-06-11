@@ -21,7 +21,9 @@ if(!args.file) {
     process.exit(1);
 }
 
-const db_uri = 'mongodb://' + args.host + ':' + args.port + '/' + args.database;
+let host = args.host;
+if(args.host.charAt(0) == '@') host = args.host.substring(1);
+const db_uri = 'mongodb://' + host + ':' + args.port + '/' + args.database;
 const client = new MongoClient(db_uri, {useUnifiedTopology: true});
 
 client.connect(async function(err) {
