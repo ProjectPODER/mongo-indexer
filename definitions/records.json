@@ -114,10 +114,6 @@
         "options": {"name": "party_type_amount"}
     },
     {
-        "name": "hidden",
-        "index": {"hidden" : 1}
-    },
-    {
         "name": "date",
         "index": { "compiledRelease.date": 1 }
     },
