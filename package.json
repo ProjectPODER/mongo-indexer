@@ -1,6 +1,6 @@
 {
   "name": "mongo-indexer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Create indexes in mongo collections.",
   "main": "index.js",
   "scripts": {
